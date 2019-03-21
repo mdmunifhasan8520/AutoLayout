@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Vdj-4i-z02">
-    <device id="retina5_5" orientation="portrait">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -17,21 +17,21 @@
             <objects>
                 <viewController id="Vdj-4i-z02" customClass="ViewController" customModule="AutoLayout" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IdJ-lq-9gX">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cnm-zc-Xwe">
-                                <rect key="frame" x="120" y="210" width="174" height="73.666666666666686"/>
+                                <rect key="frame" x="116" y="210" width="88" height="57"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="opT-e2-xyR">
-                                        <rect key="frame" x="0.0" y="0.0" width="174" height="73.666666666666671"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="88" height="57"/>
                                         <state key="normal" title="Button" image="menu"/>
                                         <connections>
                                             <segue destination="Qv2-gd-geZ" kind="show" id="hUV-Ix-zCc"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PLAY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kAS-O6-Gjz">
-                                        <rect key="frame" x="0.0" y="0.0" width="174" height="73.666666666666671"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="88" height="57"/>
                                         <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="30"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -73,21 +73,21 @@
             <objects>
                 <viewController id="Qv2-gd-geZ" customClass="ViewController" customModule="AutoLayout" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vhy-a1-Kjl">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qNj-nF-krW" userLabel="top">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="110.33333333333333"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="85"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Level" translatesAutoresizingMaskIntoConstraints="NO" id="9L6-ns-RQy">
-                                        <rect key="frame" x="170.33333333333334" y="17.666666666666671" width="75" height="75"/>
+                                        <rect key="frame" x="122.5" y="5" width="75" height="75"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="75" id="Z8F-ya-ZQK"/>
                                             <constraint firstAttribute="width" constant="75" id="dac-o7-5Xm"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dRq-cE-TNe">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="110.33333333333333"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="85"/>
                                         <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="25"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -104,71 +104,20 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rob-tV-Ix1" userLabel="question">
-                                <rect key="frame" x="20" y="127.33333333333334" width="374" height="367.66666666666663"/>
+                                <rect key="frame" x="16" y="102" width="288" height="275.5"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="gan-bJ-IgT">
-                                        <rect key="frame" x="26" y="193.66666666666669" width="314" height="148"/>
-                                        <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x2j-Yp-bjw">
-                                                <rect key="frame" x="0.0" y="0.0" width="152" height="148"/>
-                                                <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c3U-GD-0qs">
-                                                        <rect key="frame" x="0.0" y="0.0" width="152" height="148"/>
-                                                        <state key="normal" title="Button" image="image_border"/>
-                                                    </button>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Frank Rijkaard_A" translatesAutoresizingMaskIntoConstraints="NO" id="A4c-c5-HVi">
-                                                        <rect key="frame" x="0.0" y="10" width="152" height="128"/>
-                                                    </imageView>
-                                                </subviews>
-                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="trailing" secondItem="c3U-GD-0qs" secondAttribute="trailing" id="JVa-BZ-gCN"/>
-                                                    <constraint firstItem="c3U-GD-0qs" firstAttribute="top" secondItem="x2j-Yp-bjw" secondAttribute="top" id="MbI-cB-0so"/>
-                                                    <constraint firstAttribute="bottom" secondItem="A4c-c5-HVi" secondAttribute="bottom" constant="10" id="PYp-Td-Usv"/>
-                                                    <constraint firstAttribute="bottom" secondItem="c3U-GD-0qs" secondAttribute="bottom" id="Reu-oL-shO"/>
-                                                    <constraint firstItem="A4c-c5-HVi" firstAttribute="leading" secondItem="x2j-Yp-bjw" secondAttribute="leading" id="T2Z-uX-j3f"/>
-                                                    <constraint firstItem="c3U-GD-0qs" firstAttribute="leading" secondItem="x2j-Yp-bjw" secondAttribute="leading" id="X3n-2N-QVb"/>
-                                                    <constraint firstAttribute="trailing" secondItem="A4c-c5-HVi" secondAttribute="trailing" id="ipJ-VG-8c3"/>
-                                                    <constraint firstItem="A4c-c5-HVi" firstAttribute="top" secondItem="x2j-Yp-bjw" secondAttribute="top" constant="10" id="v4J-cd-Qt4"/>
-                                                </constraints>
-                                            </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8X0-Ur-RPb">
-                                                <rect key="frame" x="162" y="0.0" width="152" height="148"/>
-                                                <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5qT-OW-22M">
-                                                        <rect key="frame" x="0.0" y="0.0" width="152" height="148"/>
-                                                        <state key="normal" title="Button" image="image_border"/>
-                                                    </button>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Juan Sebastián Verón_A" translatesAutoresizingMaskIntoConstraints="NO" id="aNg-hQ-7ah">
-                                                        <rect key="frame" x="0.0" y="10" width="152" height="128"/>
-                                                    </imageView>
-                                                </subviews>
-                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <constraints>
-                                                    <constraint firstItem="aNg-hQ-7ah" firstAttribute="leading" secondItem="8X0-Ur-RPb" secondAttribute="leading" id="7b0-US-i8v"/>
-                                                    <constraint firstAttribute="bottom" secondItem="aNg-hQ-7ah" secondAttribute="bottom" constant="10" id="95E-8S-0ja"/>
-                                                    <constraint firstItem="aNg-hQ-7ah" firstAttribute="top" secondItem="8X0-Ur-RPb" secondAttribute="top" constant="10" id="FBA-LW-WdZ"/>
-                                                    <constraint firstItem="5qT-OW-22M" firstAttribute="top" secondItem="8X0-Ur-RPb" secondAttribute="top" id="OEv-5z-8D7"/>
-                                                    <constraint firstAttribute="bottom" secondItem="5qT-OW-22M" secondAttribute="bottom" id="QN3-Fl-Wqa"/>
-                                                    <constraint firstItem="5qT-OW-22M" firstAttribute="leading" secondItem="8X0-Ur-RPb" secondAttribute="leading" id="cz9-WB-yP8"/>
-                                                    <constraint firstAttribute="trailing" secondItem="5qT-OW-22M" secondAttribute="trailing" id="jOE-U5-nxw"/>
-                                                    <constraint firstAttribute="trailing" secondItem="aNg-hQ-7ah" secondAttribute="trailing" id="l6q-X1-hcu"/>
-                                                </constraints>
-                                            </view>
-                                        </subviews>
-                                    </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="HBy-YG-ujx">
-                                        <rect key="frame" x="26" y="38.333333333333329" width="314" height="147.33333333333337"/>
+                                        <rect key="frame" x="26" y="19" width="228" height="111"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iyT-du-VBA">
-                                                <rect key="frame" x="0.0" y="0.0" width="152" height="147.33333333333334"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="109" height="111"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gej-DI-Nc6">
-                                                        <rect key="frame" x="0.0" y="0.0" width="152" height="147.33333333333334"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="109" height="111"/>
                                                         <state key="normal" title="Button" image="image_border"/>
                                                     </button>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Diego Maradona_A" translatesAutoresizingMaskIntoConstraints="NO" id="zOb-N3-voT">
-                                                        <rect key="frame" x="0.0" y="9.9999999999999929" width="152" height="127.33333333333331"/>
+                                                        <rect key="frame" x="0.0" y="10" width="109" height="91"/>
                                                     </imageView>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -184,14 +133,14 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g2s-PD-rGJ">
-                                                <rect key="frame" x="162" y="0.0" width="152" height="147.33333333333334"/>
+                                                <rect key="frame" x="119" y="0.0" width="109" height="111"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TBy-uu-rvu">
-                                                        <rect key="frame" x="0.0" y="0.0" width="152" height="147.33333333333334"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="109" height="111"/>
                                                         <state key="normal" title="Button" image="image_border"/>
                                                     </button>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Francesco Totti_A" translatesAutoresizingMaskIntoConstraints="NO" id="IxC-bv-7a9">
-                                                        <rect key="frame" x="0.0" y="9.9999999999999929" width="152" height="127.33333333333331"/>
+                                                        <rect key="frame" x="0.0" y="10" width="109" height="91"/>
                                                     </imageView>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -204,6 +153,57 @@
                                                     <constraint firstItem="IxC-bv-7a9" firstAttribute="leading" secondItem="g2s-PD-rGJ" secondAttribute="leading" id="d0h-Qa-s4e"/>
                                                     <constraint firstAttribute="bottom" secondItem="IxC-bv-7a9" secondAttribute="bottom" constant="10" id="eQt-dx-uZB"/>
                                                     <constraint firstItem="IxC-bv-7a9" firstAttribute="top" secondItem="g2s-PD-rGJ" secondAttribute="top" constant="10" id="mZH-vO-6Kh"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="gan-bJ-IgT">
+                                        <rect key="frame" x="26" y="138.5" width="228" height="111"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x2j-Yp-bjw">
+                                                <rect key="frame" x="0.0" y="0.0" width="109" height="111"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c3U-GD-0qs">
+                                                        <rect key="frame" x="0.0" y="0.0" width="109" height="111"/>
+                                                        <state key="normal" title="Button" image="image_border"/>
+                                                    </button>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Frank Rijkaard_A" translatesAutoresizingMaskIntoConstraints="NO" id="A4c-c5-HVi">
+                                                        <rect key="frame" x="0.0" y="10" width="109" height="91"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="c3U-GD-0qs" secondAttribute="trailing" id="JVa-BZ-gCN"/>
+                                                    <constraint firstItem="c3U-GD-0qs" firstAttribute="top" secondItem="x2j-Yp-bjw" secondAttribute="top" id="MbI-cB-0so"/>
+                                                    <constraint firstAttribute="bottom" secondItem="A4c-c5-HVi" secondAttribute="bottom" constant="10" id="PYp-Td-Usv"/>
+                                                    <constraint firstAttribute="bottom" secondItem="c3U-GD-0qs" secondAttribute="bottom" id="Reu-oL-shO"/>
+                                                    <constraint firstItem="A4c-c5-HVi" firstAttribute="leading" secondItem="x2j-Yp-bjw" secondAttribute="leading" id="T2Z-uX-j3f"/>
+                                                    <constraint firstItem="c3U-GD-0qs" firstAttribute="leading" secondItem="x2j-Yp-bjw" secondAttribute="leading" id="X3n-2N-QVb"/>
+                                                    <constraint firstAttribute="trailing" secondItem="A4c-c5-HVi" secondAttribute="trailing" id="ipJ-VG-8c3"/>
+                                                    <constraint firstItem="A4c-c5-HVi" firstAttribute="top" secondItem="x2j-Yp-bjw" secondAttribute="top" constant="10" id="v4J-cd-Qt4"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8X0-Ur-RPb">
+                                                <rect key="frame" x="119" y="0.0" width="109" height="111"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5qT-OW-22M">
+                                                        <rect key="frame" x="0.0" y="0.0" width="109" height="111"/>
+                                                        <state key="normal" title="Button" image="image_border"/>
+                                                    </button>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Juan Sebastián Verón_A" translatesAutoresizingMaskIntoConstraints="NO" id="aNg-hQ-7ah">
+                                                        <rect key="frame" x="0.0" y="10" width="109" height="91"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="aNg-hQ-7ah" firstAttribute="leading" secondItem="8X0-Ur-RPb" secondAttribute="leading" id="7b0-US-i8v"/>
+                                                    <constraint firstAttribute="bottom" secondItem="aNg-hQ-7ah" secondAttribute="bottom" constant="10" id="95E-8S-0ja"/>
+                                                    <constraint firstItem="aNg-hQ-7ah" firstAttribute="top" secondItem="8X0-Ur-RPb" secondAttribute="top" constant="10" id="FBA-LW-WdZ"/>
+                                                    <constraint firstItem="5qT-OW-22M" firstAttribute="top" secondItem="8X0-Ur-RPb" secondAttribute="top" id="OEv-5z-8D7"/>
+                                                    <constraint firstAttribute="bottom" secondItem="5qT-OW-22M" secondAttribute="bottom" id="QN3-Fl-Wqa"/>
+                                                    <constraint firstItem="5qT-OW-22M" firstAttribute="leading" secondItem="8X0-Ur-RPb" secondAttribute="leading" id="cz9-WB-yP8"/>
+                                                    <constraint firstAttribute="trailing" secondItem="5qT-OW-22M" secondAttribute="trailing" id="jOE-U5-nxw"/>
+                                                    <constraint firstAttribute="trailing" secondItem="aNg-hQ-7ah" secondAttribute="trailing" id="l6q-X1-hcu"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
@@ -222,20 +222,20 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5ef-hl-dgU" userLabel="answer">
-                                <rect key="frame" x="40" y="513" width="333" height="58"/>
+                                <rect key="frame" x="36" y="395.5" width="247" height="41"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="d3z-gn-j1y">
-                                        <rect key="frame" x="4" y="4" width="325" height="50"/>
+                                        <rect key="frame" x="4" y="4" width="239" height="33"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mhb-Ul-lU2">
-                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="35.5" height="33"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NNB-AW-KWt">
-                                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="35.5" height="33"/>
                                                         <state key="normal" title="Button" image="letter"/>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="P" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NNi-xG-5z9">
-                                                        <rect key="frame" x="5" y="5" width="40" height="40"/>
+                                                        <rect key="frame" x="5" y="5" width="25.5" height="23"/>
                                                         <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="20"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -254,14 +254,14 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8bT-OP-mZr">
-                                                <rect key="frame" x="55" y="0.0" width="50" height="50"/>
+                                                <rect key="frame" x="40.5" y="0.0" width="36" height="33"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="htY-df-JVm">
-                                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="36" height="33"/>
                                                         <state key="normal" title="Button" image="letter"/>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="L" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vXu-YA-jg8">
-                                                        <rect key="frame" x="5" y="5" width="40" height="40"/>
+                                                        <rect key="frame" x="5" y="5" width="26" height="23"/>
                                                         <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="20"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -280,14 +280,14 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pEM-n4-XO1">
-                                                <rect key="frame" x="110" y="0.0" width="50" height="50"/>
+                                                <rect key="frame" x="81.5" y="0.0" width="35.5" height="33"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DxE-l7-pl5">
-                                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="35.5" height="33"/>
                                                         <state key="normal" title="Button" image="letter"/>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Md-V7-YCS">
-                                                        <rect key="frame" x="5" y="5" width="40" height="40"/>
+                                                        <rect key="frame" x="5" y="5" width="25.5" height="23"/>
                                                         <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="20"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -306,14 +306,14 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="748-Vu-6uh">
-                                                <rect key="frame" x="165" y="0.0" width="50" height="50"/>
+                                                <rect key="frame" x="122" y="0.0" width="35.5" height="33"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kYi-wd-lIB">
-                                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="35.5" height="33"/>
                                                         <state key="normal" title="Button" image="letter"/>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Y" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iyu-g1-PZe">
-                                                        <rect key="frame" x="5" y="5" width="40" height="40"/>
+                                                        <rect key="frame" x="5" y="5" width="25.5" height="23"/>
                                                         <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="20"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -332,14 +332,14 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Ja-1t-4Hp">
-                                                <rect key="frame" x="220" y="0.0" width="50" height="50"/>
+                                                <rect key="frame" x="162.5" y="0.0" width="36" height="33"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mbG-zT-ykB">
-                                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="36" height="33"/>
                                                         <state key="normal" title="Button" image="letter"/>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="egu-W4-auw">
-                                                        <rect key="frame" x="5" y="5" width="40" height="40"/>
+                                                        <rect key="frame" x="5" y="5" width="26" height="23"/>
                                                         <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="20"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -358,14 +358,14 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G45-w4-tQv">
-                                                <rect key="frame" x="275" y="0.0" width="50" height="50"/>
+                                                <rect key="frame" x="203.5" y="0.0" width="35.5" height="33"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CNu-yH-xOP">
-                                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="35.5" height="33"/>
                                                         <state key="normal" title="Button" image="letter"/>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="R" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v1e-fm-cJd">
-                                                        <rect key="frame" x="5" y="5" width="40" height="40"/>
+                                                        <rect key="frame" x="5" y="5" width="25.5" height="23"/>
                                                         <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="20"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -395,20 +395,20 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7yz-W8-apc" userLabel="bottom">
-                                <rect key="frame" x="0.0" y="603" width="414" height="133"/>
+                                <rect key="frame" x="0.0" y="468.5" width="320" height="99.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Gi2-fM-dtA">
-                                        <rect key="frame" x="10" y="3" width="394" height="54"/>
+                                        <rect key="frame" x="10" y="3" width="300" height="40"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Fp-iw-ggC">
-                                                <rect key="frame" x="0.0" y="0.0" width="47.666666666666664" height="54"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="36" height="40"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oj3-xo-4mB">
-                                                        <rect key="frame" x="5" y="5" width="37.666666666666664" height="44"/>
+                                                        <rect key="frame" x="5" y="5" width="26" height="30"/>
                                                         <state key="normal" title="Button" image="letter"/>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tbS-9z-mYR">
-                                                        <rect key="frame" x="5" y="5" width="37.666666666666664" height="44"/>
+                                                        <rect key="frame" x="5" y="5" width="26" height="30"/>
                                                         <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="19"/>
                                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -427,14 +427,14 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gop-46-NGm">
-                                                <rect key="frame" x="49.666666666666657" y="0.0" width="47.333333333333343" height="54"/>
+                                                <rect key="frame" x="38" y="0.0" width="35.5" height="40"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t9t-yd-mC1">
-                                                        <rect key="frame" x="5.0000000000000071" y="5" width="37.333333333333336" height="44"/>
+                                                        <rect key="frame" x="5" y="5" width="25.5" height="30"/>
                                                         <state key="normal" title="Button" image="letter"/>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="L" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MbB-Tc-ZpA">
-                                                        <rect key="frame" x="5.0000000000000071" y="5" width="37.333333333333336" height="44"/>
+                                                        <rect key="frame" x="5" y="5" width="25.5" height="30"/>
                                                         <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="20"/>
                                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -453,14 +453,14 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vaL-Et-lTA">
-                                                <rect key="frame" x="99" y="0.0" width="47.666666666666657" height="54"/>
+                                                <rect key="frame" x="75.5" y="0.0" width="36" height="40"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5LM-FT-SNh">
-                                                        <rect key="frame" x="5" y="5" width="37.666666666666664" height="44"/>
+                                                        <rect key="frame" x="5" y="5" width="26" height="30"/>
                                                         <state key="normal" title="Button" image="letter"/>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="B" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jFH-0h-g92">
-                                                        <rect key="frame" x="5" y="5" width="37.666666666666664" height="44"/>
+                                                        <rect key="frame" x="5" y="5" width="26" height="30"/>
                                                         <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="19"/>
                                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -479,14 +479,14 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gkr-q6-Sct">
-                                                <rect key="frame" x="148.66666666666666" y="0.0" width="47.333333333333343" height="54"/>
+                                                <rect key="frame" x="113.5" y="0.0" width="35.5" height="40"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oe7-9k-0gq">
-                                                        <rect key="frame" x="5" y="5" width="37.333333333333336" height="44"/>
+                                                        <rect key="frame" x="5" y="5" width="25.5" height="30"/>
                                                         <state key="normal" title="Button" image="letter"/>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="F" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ipz-VM-7YW">
-                                                        <rect key="frame" x="5" y="5" width="37.333333333333336" height="44"/>
+                                                        <rect key="frame" x="5" y="5" width="25.5" height="30"/>
                                                         <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="21"/>
                                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -505,14 +505,14 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z7z-cL-HpY">
-                                                <rect key="frame" x="198" y="0.0" width="47.666666666666657" height="54"/>
+                                                <rect key="frame" x="151" y="0.0" width="36" height="40"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sbS-el-ZU3">
-                                                        <rect key="frame" x="5" y="5" width="37.666666666666664" height="44"/>
+                                                        <rect key="frame" x="5" y="5" width="26" height="30"/>
                                                         <state key="normal" title="Button" image="letter"/>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rz3-jC-e43">
-                                                        <rect key="frame" x="5" y="5" width="37.666666666666664" height="44"/>
+                                                        <rect key="frame" x="5" y="5" width="26" height="30"/>
                                                         <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="21"/>
                                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -531,14 +531,14 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tL0-kq-u9e">
-                                                <rect key="frame" x="247.66666666666671" y="0.0" width="47.333333333333343" height="54"/>
+                                                <rect key="frame" x="189" y="0.0" width="35.5" height="40"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="os1-sC-GOX">
-                                                        <rect key="frame" x="5" y="5" width="37.333333333333336" height="44"/>
+                                                        <rect key="frame" x="5" y="5" width="25.5" height="30"/>
                                                         <state key="normal" title="Button" image="letter"/>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Z" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dmd-Ux-b2E">
-                                                        <rect key="frame" x="5" y="5" width="37.333333333333336" height="44"/>
+                                                        <rect key="frame" x="5" y="5" width="25.5" height="30"/>
                                                         <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="20"/>
                                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -557,14 +557,14 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n7w-C9-89D">
-                                                <rect key="frame" x="297" y="0.0" width="47.666666666666686" height="54"/>
+                                                <rect key="frame" x="226.5" y="0.0" width="36" height="40"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J3Z-4O-fcy">
-                                                        <rect key="frame" x="5" y="5" width="37.666666666666664" height="44"/>
+                                                        <rect key="frame" x="5" y="5" width="26" height="30"/>
                                                         <state key="normal" title="Button" image="letter"/>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="O" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ScI-SX-HGo">
-                                                        <rect key="frame" x="5" y="5" width="37.666666666666664" height="44"/>
+                                                        <rect key="frame" x="5" y="5" width="26" height="30"/>
                                                         <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="19"/>
                                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -583,14 +583,14 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R5R-Pf-5JH">
-                                                <rect key="frame" x="346.66666666666669" y="0.0" width="47.333333333333314" height="54"/>
+                                                <rect key="frame" x="264.5" y="0.0" width="35.5" height="40"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qjx-34-B1C">
-                                                        <rect key="frame" x="5" y="5" width="37.333333333333336" height="44"/>
+                                                        <rect key="frame" x="5" y="5" width="25.5" height="30"/>
                                                         <state key="normal" title="Button" image="letter"/>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="D" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zNX-62-ny2">
-                                                        <rect key="frame" x="5" y="5" width="37.333333333333336" height="44"/>
+                                                        <rect key="frame" x="5" y="5" width="25.5" height="30"/>
                                                         <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="19"/>
                                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -612,17 +612,17 @@
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="gnB-YH-4od">
-                                        <rect key="frame" x="10" y="64.666666666666629" width="394" height="53.333333333333343"/>
+                                        <rect key="frame" x="10" y="44.5" width="300" height="40"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JFy-dK-P00">
-                                                <rect key="frame" x="0.0" y="0.0" width="47.666666666666664" height="53.333333333333336"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="36" height="40"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zB7-nc-BEM">
-                                                        <rect key="frame" x="5" y="5" width="37.666666666666664" height="43.333333333333336"/>
+                                                        <rect key="frame" x="5" y="5" width="26" height="30"/>
                                                         <state key="normal" title="Button" image="letter"/>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="K" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l0M-RF-vJ4">
-                                                        <rect key="frame" x="5" y="5" width="37.666666666666664" height="43.333333333333336"/>
+                                                        <rect key="frame" x="5" y="5" width="26" height="30"/>
                                                         <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="19"/>
                                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -641,14 +641,14 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QXo-nz-euI">
-                                                <rect key="frame" x="49.666666666666657" y="0.0" width="47.333333333333343" height="53.333333333333336"/>
+                                                <rect key="frame" x="38" y="0.0" width="35.5" height="40"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="twX-0F-Gv7">
-                                                        <rect key="frame" x="5.0000000000000071" y="5" width="37.333333333333336" height="43.333333333333336"/>
+                                                        <rect key="frame" x="5" y="5" width="25.5" height="30"/>
                                                         <state key="normal" title="Button" image="letter"/>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="M" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LZk-OB-aO8">
-                                                        <rect key="frame" x="5.0000000000000071" y="5" width="37.333333333333336" height="43.333333333333336"/>
+                                                        <rect key="frame" x="5" y="5" width="25.5" height="30"/>
                                                         <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="19"/>
                                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -667,14 +667,14 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w7M-iQ-hFV">
-                                                <rect key="frame" x="99" y="0.0" width="47.666666666666657" height="53.333333333333336"/>
+                                                <rect key="frame" x="75.5" y="0.0" width="36" height="40"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mZR-iw-YYU">
-                                                        <rect key="frame" x="5" y="5" width="37.666666666666664" height="43.333333333333336"/>
+                                                        <rect key="frame" x="5" y="5" width="26" height="30"/>
                                                         <state key="normal" title="Button" image="letter"/>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Y" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ex1-4O-IyL">
-                                                        <rect key="frame" x="5" y="5" width="37.666666666666664" height="43.333333333333336"/>
+                                                        <rect key="frame" x="5" y="5" width="26" height="30"/>
                                                         <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="20"/>
                                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -693,14 +693,14 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PrN-2q-x74">
-                                                <rect key="frame" x="148.66666666666666" y="0.0" width="47.333333333333343" height="53.333333333333336"/>
+                                                <rect key="frame" x="113.5" y="0.0" width="35.5" height="40"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NgS-yU-WSU">
-                                                        <rect key="frame" x="5" y="5" width="37.333333333333336" height="43.333333333333336"/>
+                                                        <rect key="frame" x="5" y="5" width="25.5" height="30"/>
                                                         <state key="normal" title="Button" image="letter"/>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="C" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nkw-gv-imZ">
-                                                        <rect key="frame" x="5" y="5" width="37.333333333333336" height="43.333333333333336"/>
+                                                        <rect key="frame" x="5" y="5" width="25.5" height="30"/>
                                                         <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="20"/>
                                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -719,14 +719,14 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hjb-vp-1aS">
-                                                <rect key="frame" x="198" y="0.0" width="47.666666666666657" height="53.333333333333336"/>
+                                                <rect key="frame" x="151" y="0.0" width="36" height="40"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="caM-ib-Pb6">
-                                                        <rect key="frame" x="5" y="5" width="37.666666666666664" height="43.333333333333336"/>
+                                                        <rect key="frame" x="5" y="5" width="26" height="30"/>
                                                         <state key="normal" title="Button" image="letter"/>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="T" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a0g-EO-apM">
-                                                        <rect key="frame" x="5" y="5" width="37.666666666666664" height="43.333333333333336"/>
+                                                        <rect key="frame" x="5" y="5" width="26" height="30"/>
                                                         <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="19"/>
                                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -745,14 +745,14 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zxo-j9-gAS">
-                                                <rect key="frame" x="247.66666666666671" y="0.0" width="47.333333333333343" height="53.333333333333336"/>
+                                                <rect key="frame" x="189" y="0.0" width="35.5" height="40"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fbq-hS-sPW">
-                                                        <rect key="frame" x="5" y="5" width="37.333333333333336" height="43.333333333333336"/>
+                                                        <rect key="frame" x="5" y="5" width="25.5" height="30"/>
                                                         <state key="normal" title="Button" image="letter"/>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Q" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VEd-kr-24j">
-                                                        <rect key="frame" x="5" y="5" width="37.333333333333336" height="43.333333333333336"/>
+                                                        <rect key="frame" x="5" y="5" width="25.5" height="30"/>
                                                         <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="20"/>
                                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -771,14 +771,14 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8DR-55-yDY">
-                                                <rect key="frame" x="297" y="0.0" width="47.666666666666686" height="53.333333333333336"/>
+                                                <rect key="frame" x="226.5" y="0.0" width="36" height="40"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Cp-AQ-6va">
-                                                        <rect key="frame" x="5" y="5" width="37.666666666666664" height="43.333333333333336"/>
+                                                        <rect key="frame" x="5" y="5" width="26" height="30"/>
                                                         <state key="normal" title="Button" image="letter"/>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="R" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1mq-B9-f8d">
-                                                        <rect key="frame" x="5" y="5" width="37.666666666666664" height="43.333333333333336"/>
+                                                        <rect key="frame" x="5" y="5" width="26" height="30"/>
                                                         <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="20"/>
                                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -797,14 +797,14 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yi0-ix-WPc">
-                                                <rect key="frame" x="346.66666666666669" y="0.0" width="47.333333333333314" height="53.333333333333336"/>
+                                                <rect key="frame" x="264.5" y="0.0" width="35.5" height="40"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dZ5-Fz-Qyu">
-                                                        <rect key="frame" x="5" y="5" width="37.333333333333336" height="43.333333333333336"/>
+                                                        <rect key="frame" x="5" y="5" width="25.5" height="30"/>
                                                         <state key="normal" title="Button" image="letter"/>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="P" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nt7-oB-f5B">
-                                                        <rect key="frame" x="5" y="5" width="37.333333333333336" height="43.333333333333336"/>
+                                                        <rect key="frame" x="5" y="5" width="25.5" height="30"/>
                                                         <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="21"/>
                                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -860,63 +860,16 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="0F8-aC-kXH"/>
                     </view>
+                    <connections>
+                        <outlet property="firstImageView" destination="zOb-N3-voT" id="BjB-bJ-pgF"/>
+                        <outlet property="fourthImageView" destination="aNg-hQ-7ah" id="Zfx-Yn-kDf"/>
+                        <outlet property="secondImageView" destination="IxC-bv-7a9" id="Olr-w5-gCj"/>
+                        <outlet property="thirdImageView" destination="A4c-c5-HVi" id="Nlu-4t-3we"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V5o-El-ZSA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1597.5" y="-249.29577464788733"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="eJa-3M-pZy">
-            <objects>
-                <viewController id="KXh-1Q-rjN" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8ov-6n-j1u">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="jQT-m6-jby"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bAb-ET-B34" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1575" y="521"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="kZZ-K7-O9u">
-            <objects>
-                <viewController id="icE-bQ-9wI" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="3h7-zT-0OO">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="KLb-mr-nA5">
-                                <rect key="frame" x="20" y="353" width="374" height="30"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OBA-aM-Kjg">
-                                        <rect key="frame" x="0.0" y="0.0" width="171" height="30"/>
-                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" title="Button"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3nN-qU-2X7">
-                                        <rect key="frame" x="203" y="0.0" width="171" height="30"/>
-                                        <color key="backgroundColor" red="0.093362398445606232" green="0.55957585573196411" blue="0.13055965304374695" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" title="Button"/>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" red="0.86899190989999997" green="0.35099923970000002" blue="0.1361143547" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </stackView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="KLb-mr-nA5" secondAttribute="trailing" id="Ia9-h1-qyB"/>
-                            <constraint firstItem="KLb-mr-nA5" firstAttribute="leading" secondItem="3h7-zT-0OO" secondAttribute="leadingMargin" id="TZI-xH-cvo"/>
-                            <constraint firstItem="KLb-mr-nA5" firstAttribute="centerY" secondItem="3h7-zT-0OO" secondAttribute="centerY" id="bOG-5C-W6r"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="DYb-9G-dXF"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="PPQ-kR-NwE" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1400.8" y="-321.58920539730138"/>
         </scene>
     </scenes>
     <resources>
