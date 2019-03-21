@@ -10,6 +10,7 @@
 		FAA4C0C7224378FB00F7E837 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FAA4C0C6224378FB00F7E837 /* Default-568h@2x.png */; };
 		FAA4C0C92243795A00F7E837 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA4C0C82243795A00F7E837 /* Question.swift */; };
 		FAA4C0CB2243860000F7E837 /* QuestionBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA4C0CA2243860000F7E837 /* QuestionBank.swift */; };
+		FAA4C0CF2243B66E00F7E837 /* answerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA4C0CE2243B66E00F7E837 /* answerCell.swift */; };
 		FAB9D2E222379EEA008181E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB9D2E122379EEA008181E5 /* AppDelegate.swift */; };
 		FAB9D2E422379EEA008181E5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB9D2E322379EEA008181E5 /* ViewController.swift */; };
 		FAB9D2E722379EEA008181E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAB9D2E522379EEA008181E5 /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 		FAA4C0C6224378FB00F7E837 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		FAA4C0C82243795A00F7E837 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		FAA4C0CA2243860000F7E837 /* QuestionBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionBank.swift; sourceTree = "<group>"; };
+		FAA4C0CE2243B66E00F7E837 /* answerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = answerCell.swift; sourceTree = "<group>"; };
 		FAB9D2DE22379EEA008181E5 /* AutoLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAB9D2E122379EEA008181E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAB9D2E322379EEA008181E5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +49,7 @@
 				FAB9D2E822379EF4008181E5 /* Assets.xcassets */,
 				FAB9D2EA22379EF4008181E5 /* LaunchScreen.storyboard */,
 				FAB9D2E522379EEA008181E5 /* Main.storyboard */,
+				FAA4C0CE2243B66E00F7E837 /* answerCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 				FAA4C0CB2243860000F7E837 /* QuestionBank.swift in Sources */,
 				FAB9D2E422379EEA008181E5 /* ViewController.swift in Sources */,
 				FAB9D2E222379EEA008181E5 /* AppDelegate.swift in Sources */,
+				FAA4C0CF2243B66E00F7E837 /* answerCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
