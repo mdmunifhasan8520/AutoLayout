@@ -17,6 +17,7 @@
 		FAB9D2E922379EF4008181E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAB9D2E822379EF4008181E5 /* Assets.xcassets */; };
 		FAB9D2EC22379EF4008181E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAB9D2EA22379EF4008181E5 /* LaunchScreen.storyboard */; };
 		FAF229E8224539C8007CEBB3 /* hintsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF229E7224539C8007CEBB3 /* hintsCell.swift */; };
+		FAF229EA22471A83007CEBB3 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF229E922471A82007CEBB3 /* CollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		FAB9D2EB22379EF4008181E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAB9D2ED22379EF4008181E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAF229E7224539C8007CEBB3 /* hintsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hintsCell.swift; sourceTree = "<group>"; };
+		FAF229E922471A82007CEBB3 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 			children = (
 				FAB9D2E122379EEA008181E5 /* AppDelegate.swift */,
 				FAB9D2E322379EEA008181E5 /* ViewController.swift */,
+				FAF229E922471A82007CEBB3 /* CollectionViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 				FAA4C0C92243795A00F7E837 /* Question.swift in Sources */,
 				FAA4C0CB2243860000F7E837 /* QuestionBank.swift in Sources */,
 				FAB9D2E422379EEA008181E5 /* ViewController.swift in Sources */,
+				FAF229EA22471A83007CEBB3 /* CollectionViewController.swift in Sources */,
 				FAB9D2E222379EEA008181E5 /* AppDelegate.swift in Sources */,
 				FAA4C0CF2243B66E00F7E837 /* answerCell.swift in Sources */,
 			);

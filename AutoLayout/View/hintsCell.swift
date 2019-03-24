@@ -10,5 +10,6 @@ import UIKit
 
 class hintsCell: UICollectionViewCell {
     @IBOutlet weak var hintsButton: UIButton!
+
     
 }

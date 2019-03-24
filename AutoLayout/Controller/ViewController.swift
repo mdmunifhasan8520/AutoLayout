@@ -23,6 +23,10 @@ class ViewController: UIViewController {
     var randomDict = [Int:String]()
     var keepingCurrent:[Int:String] = [1:"One", 2:"Two", 3:"Three"]
     
+    //for user pressed answertag
+    var userAnswerString: String = " "
+    var pressedTagDict:[Int:String] = [1:"One", 2:"Two", 3:"Three"]
+    
     
     
     @IBOutlet weak var firstImageView: UIImageView!
@@ -32,6 +36,15 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var answerCollectionView: UICollectionView!
     @IBOutlet weak var hintsCollectionView: UICollectionView!
+    
+    
+    
+    
+    
+    @IBAction func userPressedAction(_ sender: UIButton) {
+        print("hello\(sender.tag)")
+    }
+       
     
     
     override func viewDidLoad() {
@@ -54,6 +67,7 @@ class ViewController: UIViewController {
         hintsCollectionView?.delegate = self
         hintsCollectionView?.dataSource = self
         
+        
             answerString = firstQuestion.answerText
 
             let characters = Array(answerString)
@@ -67,7 +81,7 @@ class ViewController: UIViewController {
         
         func randomAlphaNumericString(length: Int) -> String {
             let allowedChars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
-            let allowedCharsCount = UInt32(allowedChars.characters.count)
+            let allowedCharsCount = UInt32(allowedChars.count)
             var randomString = ""
         
             for _ in 0..<length {
@@ -113,34 +127,23 @@ class ViewController: UIViewController {
             
            // someSet.append(characters[i])
             randomDict.updateValue(String(newRandomArray[i]), forKey: i)
-            
-            
         }
         
         print(randomDict)
-//        randomDict.sorted { $0 < $1 }
-//        print("another \(randomDict)")
-        
-        
-//        keepingCurrent = someDict.merging(randomDict) { current, _ in current }
-//        //keepingCurrent = someDict.merging(randomDict) { (current, _) in current }
-//        print("keeping old\(keepingCurrent)")
-//        let filtereed = randomDict.values.filter{ $0 == answerString}
-//        print("filter\(filtereed)")
-//     keepingCurrent = someDict.merging(filtereed) { current, _ in current }
-//        print("keeping old\(keepingCurrent)")
-     
+
     }
+    
+    
     
 
 }
 
 //answer collectionView
-
-extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+// MARK: CollectionView DataSource
+extension ViewController: UICollectionViewDataSource {
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        //let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! answerCell
-        
+      
         if collectionView == self.answerCollectionView {
             return answerString.count
         } else {
@@ -150,9 +153,8 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
-     
-            if collectionView == self.answerCollectionView {
+      
+            if collectionView == self.answerCollectionView  {
                 let cell1 = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! answerCell
                 cell1.answerButton.setTitle(answerDict[indexPath.row], for: .normal)
                 cell1.answerButton.setBackgroundImage(UIImage(named: "letter"), for: .normal)
@@ -161,16 +163,23 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
                 
             } else {
                 let cell2 = collectionView.dequeueReusableCell(withReuseIdentifier: "HINTS", for: indexPath) as! hintsCell
+                
                 cell2.hintsButton.setTitle(randomDict[indexPath.row], for: .normal)
                 cell2.hintsButton.setBackgroundImage(UIImage(named: "letter"), for: .normal)
                 return cell2
             }
-       
     }
+
+}
+
+// MARK: CollectionView Delegate
+extension ViewController: UICollectionViewDelegate {
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: NSIndexPath) {
+        print("User\(indexPath.item)")
+    }
 }
 
 
-//hints collectionView
 
 
