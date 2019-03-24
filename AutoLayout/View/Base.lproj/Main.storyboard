@@ -422,6 +422,9 @@
                                                             <state key="normal" title="Button">
                                                                 <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                             </state>
+                                                            <connections>
+                                                                <action selector="userPressedAction:" destination="Qv2-gd-geZ" eventType="touchUpInside" id="fXy-L0-aXO"/>
+                                                            </connections>
                                                         </button>
                                                     </subviews>
                                                 </view>
