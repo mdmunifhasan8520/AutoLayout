@@ -415,21 +415,38 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
-                                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zR6-s7-SQv">
-                                                            <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zR6-s7-SQv">
+                                                            <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
+                                                            <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                            <state key="normal" title="Button">
+                                                            <state key="normal">
                                                                 <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                             </state>
                                                             <connections>
                                                                 <action selector="userPressedAction:" destination="Qv2-gd-geZ" eventType="touchUpInside" id="fXy-L0-aXO"/>
                                                             </connections>
                                                         </button>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MEf-hq-ZZR">
+                                                            <rect key="frame" x="10" y="10" width="15" height="15"/>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                            <color key="textColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
                                                     </subviews>
                                                 </view>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="zR6-s7-SQv" secondAttribute="bottom" id="3Fr-8A-uIL"/>
+                                                    <constraint firstItem="MEf-hq-ZZR" firstAttribute="leading" secondItem="mWm-Z0-PH7" secondAttribute="leading" constant="10" id="5Y6-BX-zKf"/>
+                                                    <constraint firstItem="zR6-s7-SQv" firstAttribute="top" secondItem="mWm-Z0-PH7" secondAttribute="top" id="R4A-D2-FeZ"/>
+                                                    <constraint firstItem="zR6-s7-SQv" firstAttribute="leading" secondItem="mWm-Z0-PH7" secondAttribute="leading" id="T0j-dn-eXf"/>
+                                                    <constraint firstAttribute="bottom" secondItem="MEf-hq-ZZR" secondAttribute="bottom" constant="10" id="cjv-WR-aAu"/>
+                                                    <constraint firstAttribute="trailing" secondItem="zR6-s7-SQv" secondAttribute="trailing" id="f8R-fD-Zvd"/>
+                                                    <constraint firstAttribute="trailing" secondItem="MEf-hq-ZZR" secondAttribute="trailing" constant="10" id="nFe-AS-bXR"/>
+                                                    <constraint firstItem="MEf-hq-ZZR" firstAttribute="top" secondItem="mWm-Z0-PH7" secondAttribute="top" constant="10" id="qpz-hm-Kf4"/>
+                                                </constraints>
                                                 <connections>
                                                     <outlet property="hintsButton" destination="zR6-s7-SQv" id="Mii-Jc-Rvo"/>
+                                                    <outlet property="hintsLabel" destination="MEf-hq-ZZR" id="F0S-nP-xIf"/>
                                                 </connections>
                                             </collectionViewCell>
                                         </cells>
@@ -470,23 +487,24 @@
                                                     <rect key="frame" x="5" y="5" width="30" height="30"/>
                                                     <color key="backgroundColor" red="0.093362398445606232" green="0.55957585573196411" blue="0.13055965304374695" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                    <state key="normal" title="Buttonjgjhg"/>
                                                 </button>
-                                                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="H" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HkT-kI-MH8">
-                                                    <rect key="frame" x="5" y="9" width="31" height="22"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <color key="backgroundColor" red="0.86899190989999997" green="0.35099923970000002" blue="0.1361143547" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                    <nil key="textColor"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HkT-kI-MH8">
+                                                    <rect key="frame" x="10" y="10" width="20" height="20"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                    <color key="textColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                         </view>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="ULi-oz-Xel" secondAttribute="trailing" constant="5" id="MQt-g2-oWI"/>
+                                            <constraint firstAttribute="bottom" secondItem="HkT-kI-MH8" secondAttribute="bottom" constant="10" id="VM2-bf-B5E"/>
                                             <constraint firstItem="ULi-oz-Xel" firstAttribute="top" secondItem="RvS-6G-Zuf" secondAttribute="top" constant="5" id="c2N-Rw-COh"/>
                                             <constraint firstItem="ULi-oz-Xel" firstAttribute="leading" secondItem="RvS-6G-Zuf" secondAttribute="leading" constant="5" id="cnU-dJ-bzm"/>
+                                            <constraint firstItem="HkT-kI-MH8" firstAttribute="top" secondItem="RvS-6G-Zuf" secondAttribute="top" constant="10" id="i47-gV-uJg"/>
+                                            <constraint firstAttribute="trailing" secondItem="HkT-kI-MH8" secondAttribute="trailing" constant="10" id="m60-9O-Krg"/>
                                             <constraint firstAttribute="bottom" secondItem="ULi-oz-Xel" secondAttribute="bottom" constant="5" id="mKZ-sQ-MgQ"/>
+                                            <constraint firstItem="HkT-kI-MH8" firstAttribute="leading" secondItem="RvS-6G-Zuf" secondAttribute="leading" constant="10" id="ohW-aN-oF2"/>
                                         </constraints>
                                         <connections>
                                             <outlet property="answerButton" destination="ULi-oz-Xel" id="7CR-QJ-lYB"/>

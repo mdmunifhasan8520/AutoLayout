@@ -11,5 +11,8 @@ import UIKit
 class hintsCell: UICollectionViewCell {
     @IBOutlet weak var hintsButton: UIButton!
 
+    @IBOutlet weak var hintsLabel: UILabel!
     
+    
+   
 }

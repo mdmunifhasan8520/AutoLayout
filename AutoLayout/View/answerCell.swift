@@ -13,5 +13,7 @@ class answerCell: UICollectionViewCell {
     @IBOutlet weak var answerLabel: UILabel!
     
     @IBOutlet weak var answerButton: UIButton!
+    
+    
    
 }
